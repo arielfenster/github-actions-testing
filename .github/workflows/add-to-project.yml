@@ -1,9 +1,9 @@
 name: Add bugs to bugs project
 
-on: [issues]
+on: [issues, pull_request]
 
 jobs:
-  add-issue-to-project:
+  add-to-project:
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
@@ -11,3 +11,4 @@ jobs:
         with:
           project-url: https://github.com/users/arielfenster/projects/1
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+  

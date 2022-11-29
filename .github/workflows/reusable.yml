@@ -1,0 +1,8 @@
+name: Reusable Workflow Ariel yo yo
+on: workflow_call
+jobs:
+  deploy-reusable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy output information
+        run: echo "Deploying reusable workflow"

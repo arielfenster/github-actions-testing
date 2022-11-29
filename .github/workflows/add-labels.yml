@@ -14,14 +14,9 @@ jobs:
   label_pr:
     name: Label the PR
     runs-on: ubuntu-latest
-#     permissions:
-#       contents: read
-#       pull-requests: write
-
     steps:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: ariel
-      
-#       with:
-#         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+  deploy-main:
+    uses: ./.github/workflows/reusable.yml

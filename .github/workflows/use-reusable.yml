@@ -2,4 +2,4 @@ name: Use reusable workflow
 on: [pull_request]
 jobs:
   deploy-main:
-    uses: ./github/workflows/reusable.yml
+    uses: ./.github/workflows/reusable.yml

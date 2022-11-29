@@ -2,4 +2,4 @@ name: Use reusable workflow
 on: [pull_request]
 jobs:
   deploy-main:
-    uses: ./.github/workflows/reusable.yml
+    uses: arielfenster/github-actions-testing-2/.github/workflows/dummy.yml@main
